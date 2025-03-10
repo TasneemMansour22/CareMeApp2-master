@@ -117,6 +117,7 @@ class _MyAppState extends State<MyApp> {
             '/onBoardingScreen': (context) => OnboardingScreen(),
             '/accountTypeScreen': (context) => AccountTypeScreen(),
             '/onBoardingPage': (context) => OnboardingPage(),
+          }
         );
       },
     );
