@@ -101,20 +101,6 @@ To enable full functionality, configure Firebase:
    flutterfire configure
    ```
 
-## 🔧 Running the App  
-
-To run the app, use the following command:  
-
-```sh
-flutter run
-```
-
-For testing, use:  
-
-```sh
-flutter test
-```
-
 ## 🌟 License  
 
 This project is licensed under the **MIT License**.  
