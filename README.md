@@ -2,7 +2,7 @@
 
 A Flutter-based application designed to assist elderly people in their daily lives by providing health monitoring, medication reminders, and legal/financial support.  
 
-## 🔧 How to Run the Project
+## 🔧 How to Run the Project  
 
 ### 📌 Prerequisites  
 
@@ -19,7 +19,7 @@ Ensure that Flutter and Dart are properly set up by running the following comman
 flutter doctor
 ```
 
-Now To set up and run the **CareMe** app on your system, follow these steps:  
+Now, to set up and run the **CareMe** app on your system, follow these steps:  
 
 1. **Clone the Repository**  
    ```sh
@@ -62,6 +62,43 @@ The app helps seniors **track their health, take medications on time, and access
 It addresses the **challenges of missed medications, undiagnosed health issues, and difficulties in handling legal or financial matters**.  
 CareMe aims to improve the **quality of life** for seniors by offering a simple and reliable digital solution.  
 
+---
+
+## 📂 ⿥ Project Structure  
+
+The project's folder structure is organized as follows:  
+
+```
+/careme
+│── /lib
+│   │── main.dart  # Main entry point
+│   │── /screens   # Contains all the app screens
+│   │── /widgets   # Reusable UI components
+│   │── /models    # Data models used in the app
+│   │── /services  # Handles API calls and Firebase integration
+│── /assets        # Stores images, icons, and other static resources
+│── /android       # Android-specific files
+│── /ios           # iOS-specific files
+│── pubspec.yaml   # Project dependencies
+```
+
+This structure helps in keeping the code **organized** and **easy to navigate**.  
+
+---
+
+## 🛠 ⿦ Technologies Used  
+
+The project is built using the following technologies and tools:  
+
+- **Programming Language:** Dart  
+- **Framework:** Flutter  
+- **Database:** Firebase Firestore  
+- **State Management:** Provider / Riverpod (if applicable)  
+- **Backend Services:** Firebase Authentication & Cloud Messaging  
+- **IDE:** Android Studio / VS Code  
+
+---
+
 ## ✨ Features  
 
 ✅ Health status assessment  
@@ -71,6 +108,8 @@ CareMe aims to improve the **quality of life** for seniors by offering a simple 
 ✅ Notification system with badge count  
 ✅ Secure document upload and privacy settings  
 ✅ Admin role for managing legal and financial content  
+
+---
 
 ## 🗕️ Installation  
 
@@ -82,6 +121,8 @@ cd careme
 flutter pub get
 flutter run
 ```
+
+---
 
 ## ⚙️ Firebase Setup  
 
@@ -100,6 +141,17 @@ To enable full functionality, configure Firebase:
    ```sh
    flutterfire configure
    ```
+
+---
+
+## 📞 ⿦ Contact Information  
+
+If you have any questions or would like to contribute, feel free to reach out!  
+
+📧 **Email:** your-email@example.com  
+🔗 **GitHub:** [Your GitHub Profile](https://github.com/your-username)  
+
+---
 
 ## 🌟 License  
 
