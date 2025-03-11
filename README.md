@@ -19,7 +19,7 @@ Ensure that Flutter and Dart are properly set up by running the following comman
 flutter doctor
 ```
 
-To set up and run the **CareMe** app on your system, follow these steps:  
+Now To set up and run the **CareMe** app on your system, follow these steps:  
 
 1. **Clone the Repository**  
    ```sh
