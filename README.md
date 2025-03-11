@@ -64,7 +64,7 @@ CareMe aims to improve the **quality of life** for seniors by offering a simple 
 
 ---
 
-## 📂 ⿥ Project Structure  
+## 📂 Project Structure  
 
 The project's folder structure is organized as follows:  
 
@@ -86,7 +86,7 @@ This structure helps in keeping the code **organized** and **easy to navigate**.
 
 ---
 
-## 🛠 ⿦ Technologies Used  
+## 🛠  Technologies Used  
 
 The project is built using the following technologies and tools:  
 
