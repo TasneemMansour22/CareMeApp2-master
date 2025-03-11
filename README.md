@@ -148,5 +148,5 @@ To enable full functionality, configure Firebase:
 
 If you have any questions or would like to contribute, feel free to reach out!  
 
-📧 **Email:** your-email@example.com  
-🔗 **GitHub:** [Your GitHub Profile](https://github.com/your-username)   
+📧 **Email:** tasneemn.mansour@gmail.com 
+🔗 **GitHub:** [(https://github.com/TasneemMansour22)]
