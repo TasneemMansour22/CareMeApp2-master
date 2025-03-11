@@ -1,6 +1,8 @@
-# CareMe App 🚀
+## 🚀 CareMe App  
 
-## 🎯 Project Idea, Purpose, and Problem It Solves  
+A Flutter-based application designed to assist elderly people in their daily lives by providing health monitoring, medication reminders, and legal/financial support.  
+
+### 🎯 Project Idea, Purpose, and Problem It Solves  
 
 CareMe is a Flutter-based app designed to assist the elderly in managing their daily lives.  
 It provides **health monitoring, medication reminders, and legal/financial support** in one platform.  
@@ -8,6 +10,19 @@ The app helps seniors **track their health, take medications on time, and access
 It addresses the **challenges of missed medications, undiagnosed health issues, and difficulties in handling legal or financial matters**.  
 CareMe aims to improve the **quality of life** for seniors by offering a simple and reliable digital solution.  
 
+## 📌 Prerequisites  
+
+Before running the CareMe app, make sure you have the following installed on your system:  
+
+- **[Flutter](https://docs.flutter.dev/get-started/install)** – Flutter SDK for app development.  
+- **Dart** – Included with Flutter, required for development.  
+- **[Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)** – Preferred IDE for Flutter development.  
+- **Emulator or Real Device** – To test the application.  
+
+Ensure that Flutter and Dart are properly set up by running the following command in your terminal:  
+
+```sh
+flutter doctor
 
 ## ✨ Features
 
