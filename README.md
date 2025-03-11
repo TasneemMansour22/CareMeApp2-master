@@ -144,7 +144,7 @@ To enable full functionality, configure Firebase:
 
 ---
 
-## 📞 ⿦ Contact Information  
+## 📞 Contact Information  
 
 If you have any questions or would like to contribute, feel free to reach out!  
 
