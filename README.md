@@ -2,6 +2,15 @@
 
 A **Flutter-based** application designed to assist elderly people in their daily lives by providing **health monitoring, medication reminders, and legal/financial support**.
 
+## 🎯 Project Idea, Purpose, and Problem It Solves  
+
+CareMe is a Flutter-based app designed to assist the elderly in managing their daily lives.  
+It provides **health monitoring, medication reminders, and legal/financial support** in one platform.  
+The app helps seniors **track their health, take medications on time, and access professional assistance** easily.  
+It addresses the **challenges of missed medications, undiagnosed health issues, and difficulties in handling legal or financial matters**.  
+CareMe aims to improve the **quality of life** for seniors by offering a simple and reliable digital solution.  
+
+
 ## ✨ Features
 
 ✅ Health status assessment  
