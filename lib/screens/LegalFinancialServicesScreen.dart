@@ -68,14 +68,14 @@ class LegalFinancialServicesScreen extends StatelessWidget {
               child: OutlinedButton(
                 onPressed: () {
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ConsultationsScreen(
-                          seniorId: seniorId, consultationType: 'Legal&Financial',
-                        ),
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ConsultationsScreen(
+                        seniorId: seniorId, consultationType: 'Legal & Financial',
                       ),
-                    );
+                    ),
+                  );
 
                 },
                 style: OutlinedButton.styleFrom(

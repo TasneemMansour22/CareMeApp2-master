@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'ConsultationsScreen.dart';
@@ -94,30 +95,83 @@ class FamilyManagementScreen extends StatelessWidget {
       ),
     );
   }
+  Future<void> addFamilyMemberRequest(String seniorId, String userEmail) async {
+    try {
+      CollectionReference teamRequests = FirebaseFirestore.instance.collection('team_requests');
+
+      // Fetch user ID from email
+      String? userId = await getUserIdByEmail(userEmail);
+
+      if (userId == null) {
+        print('Error: User ID not found for email: $userEmail');
+        return;
+      }
+
+      await teamRequests.add({
+        'senior_id': seniorId,
+        'user_id': userId, // Corrected: Now using the actual user ID
+        'service_type': 'Family member',
+        'status': 'requested',
+        'created_at': FieldValue.serverTimestamp(),
+      });
+
+      print('Family member request sent successfully.');
+    } catch (e) {
+      print('Error adding family member request: $e');
+    }
+  }
+
+  Future<String?> getUserIdByEmail(String email) async {
+    try {
+      // Reference to the 'other_users' collection
+      CollectionReference users = FirebaseFirestore.instance.collection('other_users');
+
+      // Query to find user by email
+      QuerySnapshot querySnapshot = await users.where('email', isEqualTo: email).get();
+
+      // Check if user exists
+      if (querySnapshot.docs.isNotEmpty) {
+        return querySnapshot.docs.first.id; // Returns the document ID (userId)
+      } else {
+        print('No user found with email: $email');
+        return null;
+      }
+    } catch (e) {
+      print('Error fetching user ID: $e');
+      return null;
+    }
+  }
 
   void _showAddFamilyMemberDialog(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           title: Text("Add Family Member"),
           content: TextField(
-            decoration: InputDecoration( labelText: "Enter Family Member's Email",
-        labelStyle: TextStyle(color: Color(0xFF308A99)),
-        focusedBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: Color(0xFF308A99)),
-
+            controller: emailController,
+            decoration: InputDecoration(
+              labelText: "Enter Family Member's Email",
+              labelStyle: TextStyle(color: Color(0xFF308A99)),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Color(0xFF308A99)),
+              ),
             ),
-          ),),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
               child: Text("Cancel", style: TextStyle(color: Colors.red)),
             ),
             TextButton(
-              onPressed: () {
-                // Add request logic here
-                Navigator.pop(context);
+              onPressed: () async {
+                String email = emailController.text.trim();
+                if (email.isNotEmpty) {
+                  await addFamilyMemberRequest(seniorId, email);
+                  Navigator.pop(context);
+                }
               },
               child: Text("Send Request", style: TextStyle(color: Color(0xFF308A99))),
             ),
@@ -126,5 +180,6 @@ class FamilyManagementScreen extends StatelessWidget {
       },
     );
   }
+
 
 }

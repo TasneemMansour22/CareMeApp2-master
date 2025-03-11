@@ -91,9 +91,13 @@ class _TechnicalSupportScreenState extends State<TechnicalSupportScreen> {
             },
           ),
         ),
+        backgroundColor: const Color(0xFF308A99),
+        foregroundColor: Colors.white,
         title: Padding(
           padding: const EdgeInsets.only(top: 25.0),
           child: Text("Technical Support"),
+
+
         ),
       ),
       body: Padding(

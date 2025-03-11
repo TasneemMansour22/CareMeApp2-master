@@ -1,6 +1,7 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test1/screens/FamilyManagementScreen.dart';
 import 'package:test1/screens/OnboardingScreen.dart';
 import 'package:test1/screens/home_view.dart';
 import 'package:test1/screens/notification_service.dart';
@@ -117,6 +118,7 @@ class _MyAppState extends State<MyApp> {
             '/onBoardingScreen': (context) => OnboardingScreen(),
             '/accountTypeScreen': (context) => AccountTypeScreen(),
             '/onBoardingPage': (context) => OnboardingPage(),
+            // '/familyManagementScreen': (context) => FamilyManagementScreen(seniorId: '',),
           }
         );
       },

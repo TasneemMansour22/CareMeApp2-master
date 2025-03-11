@@ -118,7 +118,7 @@ class _ServiceProviderScreenState extends State<ServiceProviderScreen> {
       await _firestore.collection('team_requests').add({
         'senior_id': widget.seniorId,
         'user_id': providerId,
-
+        'user_name':providerName,
         'service_type': widget.serviceType,
         'status': 'requested',
         'created_at': Timestamp.now(),
