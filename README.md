@@ -1,7 +1,5 @@
 # CareMe App 🚀
 
-A **Flutter-based** application designed to assist elderly people in their daily lives by providing **health monitoring, medication reminders, and legal/financial support**.
-
 ## 🎯 Project Idea, Purpose, and Problem It Solves  
 
 CareMe is a Flutter-based app designed to assist the elderly in managing their daily lives.  
