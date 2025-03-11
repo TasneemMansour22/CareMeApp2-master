@@ -111,19 +111,6 @@ The project is built using the following technologies and tools:
 
 ---
 
-## 🗕️ Installation  
-
-Clone the repository and run the following commands:  
-
-```sh
-git clone https://github.com/your-username/careme.git
-cd careme
-flutter pub get
-flutter run
-```
-
----
-
 ## ⚙️ Firebase Setup  
 
 To enable full functionality, configure Firebase:  
