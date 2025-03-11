@@ -2,7 +2,22 @@
 
 A Flutter-based application designed to assist elderly people in their daily lives by providing health monitoring, medication reminders, and legal/financial support.  
 
-## 🔧 How to Run the Project  
+## 🔧 How to Run the Project
+
+### 📌 Prerequisites  
+
+Before running the CareMe app, make sure you have the following installed on your system:  
+
+- **[Flutter](https://docs.flutter.dev/get-started/install)** – Flutter SDK for app development.  
+- **Dart** – Included with Flutter, required for development.  
+- **[Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)** – Preferred IDE for Flutter development.  
+- **Emulator or Real Device** – To test the application.  
+
+Ensure that Flutter and Dart are properly set up by running the following command in your terminal:  
+
+```sh
+flutter doctor
+```
 
 To set up and run the **CareMe** app on your system, follow these steps:  
 
@@ -46,21 +61,6 @@ It provides **health monitoring, medication reminders, and legal/financial suppo
 The app helps seniors **track their health, take medications on time, and access professional assistance** easily.  
 It addresses the **challenges of missed medications, undiagnosed health issues, and difficulties in handling legal or financial matters**.  
 CareMe aims to improve the **quality of life** for seniors by offering a simple and reliable digital solution.  
-
-## 📌 Prerequisites  
-
-Before running the CareMe app, make sure you have the following installed on your system:  
-
-- **[Flutter](https://docs.flutter.dev/get-started/install)** – Flutter SDK for app development.  
-- **Dart** – Included with Flutter, required for development.  
-- **[Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)** – Preferred IDE for Flutter development.  
-- **Emulator or Real Device** – To test the application.  
-
-Ensure that Flutter and Dart are properly set up by running the following command in your terminal:  
-
-```sh
-flutter doctor
-```
 
 ## ✨ Features  
 
